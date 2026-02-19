@@ -7,7 +7,7 @@ canvas.height = window.innerHeight;
 
 const currentFrame = (index) => {
     const paddedIndex = String(index).padStart(3, '0');
-    return `frames/ezgif-frame-${paddedIndex}.png`;
+    return `frame/ezgif-frame-${paddedIndex}.png`;
 };
 
 const images = [];
