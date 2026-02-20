@@ -3,87 +3,110 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Anupriya K | Resume Portfolio</title>
+<title>Anupriya K | Portfolio</title>
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
     font-family: "Segoe UI", sans-serif;
 }
 
-body {
-    background: #f5f7fa;
-    color: #1e1e1e;
-    line-height: 1.6;
-    overflow-x: hidden;
+body{
+    background:#0f172a;
+    color:white;
+    overflow-x:hidden;
 }
 
-/* Background Animation Canvas */
-#animationCanvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    opacity: 0.08; /* Watermark transparency */
+/* Scroll Animation Canvas */
+#animationCanvas{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity:0.15;   /* visible but subtle */
 }
 
-/* Content Container */
-.container {
-    width: 85%;
-    max-width: 1000px;
-    margin: auto;
-    padding: 60px 0;
+/* Dark overlay for readability */
+.overlay{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.55);
+    z-index:-1;
 }
 
-header {
-    text-align: center;
-    margin-bottom: 50px;
+/* Main Container */
+.container{
+    width:85%;
+    max-width:1000px;
+    margin:auto;
+    padding:80px 0;
 }
 
-header h1 {
-    font-size: 42px;
-    font-weight: 700;
+/* Header */
+header{
+    text-align:center;
+    margin-bottom:80px;
 }
 
-header h3 {
-    font-weight: 400;
-    color: #444;
+header h1{
+    font-size:48px;
+    font-weight:700;
 }
 
-section {
-    margin-bottom: 50px;
+header p{
+    font-size:18px;
+    opacity:0.8;
 }
 
-section h2 {
-    font-size: 22px;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #333;
-    display: inline-block;
-    padding-bottom: 5px;
+/* Sections */
+section{
+    margin-bottom:80px;
 }
 
-.card {
-    background: rgba(255,255,255,0.85);
-    padding: 20px;
-    margin-top: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+/* Transparent Info Box */
+.glass{
+    background:rgba(255,255,255,0.05);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border:1px solid rgba(255,255,255,0.15);
+    padding:30px;
+    border-radius:16px;
 }
 
-ul {
-    margin-left: 20px;
-    margin-top: 10px;
+/* Section Headings */
+section h2{
+    font-size:24px;
+    margin-bottom:25px;
+    border-left:4px solid #00bcd4;
+    padding-left:12px;
 }
 
-footer {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 14px;
-    color: #555;
+/* Lists */
+ul{
+    margin-left:20px;
+    margin-top:10px;
+}
+
+li{
+    margin-bottom:8px;
+}
+
+/* Smooth spacing */
+p{
+    margin-bottom:10px;
+}
+
+footer{
+    text-align:center;
+    padding:40px 0;
+    opacity:0.7;
 }
 </style>
 </head>
@@ -91,17 +114,18 @@ footer {
 <body>
 
 <canvas id="animationCanvas"></canvas>
+<div class="overlay"></div>
 
 <div class="container">
 
 <header>
     <h1>Anupriya K</h1>
-    <h3>Electronics and Communication Engineering Student</h3>
+    <p>Electronics and Communication Engineering Student</p>
 </header>
 
 <section>
     <h2>Education</h2>
-    <div class="card">
+    <div class="glass">
         <p><strong>B.E. Electronics and Communication Engineering</strong></p>
         <p>Government College of Engineering, Tirunelveli</p>
         <p>Current CGPA: 7.82</p>
@@ -114,48 +138,48 @@ footer {
 
 <section>
     <h2>Projects</h2>
-    <div class="card">
+    <div class="glass">
         <p><strong>Smart Plant Monitoring System</strong></p>
         <ul>
-            <li>Designed an automated plant monitoring system using sensors.</li>
-            <li>Monitored soil moisture and environmental conditions.</li>
+            <li>Automated soil moisture monitoring using sensors</li>
+            <li>Environmental data-based plant health tracking</li>
         </ul>
 
         <br>
 
         <p><strong>Smart Lock System</strong></p>
         <ul>
-            <li>Developed an electronic lock system for enhanced security.</li>
-            <li>Implemented authentication mechanism using embedded systems.</li>
+            <li>Embedded-based electronic authentication system</li>
+            <li>Secure access control implementation</li>
         </ul>
     </div>
 </section>
 
 <section>
     <h2>Internship</h2>
-    <div class="card">
+    <div class="glass">
         <p><strong>IPCS Global</strong></p>
         <ul>
-            <li>Gained practical exposure in embedded systems and electronics applications.</li>
-            <li>Worked on real-time hardware interfacing concepts.</li>
+            <li>Hands-on experience in embedded systems</li>
+            <li>Hardware interfacing and real-time applications</li>
         </ul>
     </div>
 </section>
 
 <section>
     <h2>Technical Skills</h2>
-    <div class="card">
+    <div class="glass">
         <ul>
             <li>Embedded Systems</li>
-            <li>Basic C Programming</li>
-            <li>Electronics Circuit Design</li>
+            <li>C Programming</li>
             <li>Microcontrollers</li>
+            <li>Electronics Circuit Design</li>
         </ul>
     </div>
 </section>
 
 <footer>
-    © 2026 Anupriya K | ECE Portfolio
+© 2026 Anupriya K
 </footer>
 
 </div>
@@ -168,44 +192,44 @@ let frameCount = 240;
 let images = [];
 let currentFrame = 0;
 
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+function resizeCanvas(){
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+}
+resizeCanvas();
 
-// Load all frames
-for (let i = 1; i <= frameCount; i++) {
+for(let i=1;i<=frameCount;i++){
     let img = new Image();
-    let number = String(i).padStart(3, '0');
+    let number = String(i).padStart(3,'0');
     img.src = `frames/ezgif-frame-${number}.jpg`;
     images.push(img);
 }
 
-function drawFrame(index) {
-    if (!images[index]) return;
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+function drawFrame(index){
+    const img = images[index];
+    if(!img) return;
 
-    let img = images[index];
-    let scale = Math.max(canvas.width / img.width, canvas.height / img.height);
-    let x = (canvas.width / 2) - (img.width / 2) * scale;
-    let y = (canvas.height / 2) - (img.height / 2) * scale;
+    ctx.clearRect(0,0,canvas.width,canvas.height);
 
-    ctx.drawImage(img, x, y, img.width * scale, img.height * scale);
+    let scale = Math.max(canvas.width/img.width, canvas.height/img.height);
+    let x = (canvas.width/2) - (img.width/2)*scale;
+    let y = (canvas.height/2) - (img.height/2)*scale;
+
+    ctx.drawImage(img,x,y,img.width*scale,img.height*scale);
 }
 
-window.addEventListener("scroll", () => {
+window.addEventListener("scroll",()=>{
     let scrollTop = document.documentElement.scrollTop;
     let maxScroll = document.documentElement.scrollHeight - window.innerHeight;
     let scrollFraction = scrollTop / maxScroll;
-    currentFrame = Math.min(frameCount - 1, Math.floor(scrollFraction * frameCount));
+    currentFrame = Math.min(frameCount-1, Math.floor(scrollFraction*frameCount));
     drawFrame(currentFrame);
 });
 
-images[0].onload = () => {
-    drawFrame(0);
-};
+images[0].onload = ()=> drawFrame(0);
 
-window.addEventListener("resize", () => {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+window.addEventListener("resize",()=>{
+    resizeCanvas();
     drawFrame(currentFrame);
 });
 </script>
