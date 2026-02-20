@@ -6,28 +6,18 @@
 <title>Anupriya K | Portfolio</title>
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: "Segoe UI", sans-serif;
-}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,sans-serif}
+body{background:#0f172a;color:#fff;overflow-x:hidden}
 
-body{
-    background:#0f172a;
-    color:white;
-    overflow-x:hidden;
-}
-
-/* Scroll Animation Canvas */
+/* Background animation */
 #animationCanvas{
     position:fixed;
     top:0;
     left:0;
     width:100%;
     height:100%;
-    z-index:-1;
-    opacity:0.15;   /* visible but subtle */
+    z-index:-2;
+    opacity:.18;   /* animation visible */
 }
 
 /* Dark overlay for readability */
@@ -37,11 +27,11 @@ body{
     left:0;
     width:100%;
     height:100%;
-    background:rgba(0,0,0,0.55);
+    background:rgba(0,0,0,.45);
     z-index:-1;
 }
 
-/* Main Container */
+/* Main container */
 .container{
     width:85%;
     max-width:1000px;
@@ -49,7 +39,6 @@ body{
     padding:80px 0;
 }
 
-/* Header */
 header{
     text-align:center;
     margin-bottom:80px;
@@ -61,53 +50,34 @@ header h1{
 }
 
 header p{
-    font-size:18px;
-    opacity:0.8;
+    margin-top:10px;
+    opacity:.8;
 }
 
-/* Sections */
 section{
-    margin-bottom:80px;
+    margin-bottom:70px;
 }
 
-/* Transparent Info Box */
-.glass{
-    background:rgba(255,255,255,0.05);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border:1px solid rgba(255,255,255,0.15);
-    padding:30px;
-    border-radius:16px;
-}
-
-/* Section Headings */
 section h2{
     font-size:24px;
-    margin-bottom:25px;
+    margin-bottom:20px;
     border-left:4px solid #00bcd4;
     padding-left:12px;
 }
 
-/* Lists */
-ul{
-    margin-left:20px;
-    margin-top:10px;
+/* Transparent resume container */
+.glass{
+    background:rgba(0,0,0,.25);   /* transparent dark */
+    backdrop-filter:blur(6px);
+    -webkit-backdrop-filter:blur(6px);
+    padding:28px;
+    border-radius:14px;
 }
 
-li{
-    margin-bottom:8px;
-}
-
-/* Smooth spacing */
-p{
-    margin-bottom:10px;
-}
-
-footer{
-    text-align:center;
-    padding:40px 0;
-    opacity:0.7;
-}
+ul{margin-left:20px;margin-top:10px}
+li{margin-bottom:8px}
+p{margin-bottom:8px}
+footer{text-align:center;padding:40px 0;opacity:.7}
 </style>
 </head>
 
@@ -119,119 +89,104 @@ footer{
 <div class="container">
 
 <header>
-    <h1>Anupriya K</h1>
-    <p>Electronics and Communication Engineering Student</p>
+<h1>Anupriya K</h1>
+<p>Electronics and Communication Engineering Student</p>
 </header>
 
 <section>
-    <h2>Education</h2>
-    <div class="glass">
-        <p><strong>B.E. Electronics and Communication Engineering</strong></p>
-        <p>Government College of Engineering, Tirunelveli</p>
-        <p>Current CGPA: 7.82</p>
-        <br>
-        <p><strong>Higher Secondary (12th)</strong> – 520 Marks</p>
-        <p><strong>SSLC (10th)</strong> – 434 Marks</p>
-        <p>Government Girls Higher Secondary School, Sankarankovil</p>
-    </div>
+<h2>Education</h2>
+<div class="glass">
+<p><strong>B.E. Electronics and Communication Engineering</strong></p>
+<p>Government College of Engineering, Tirunelveli</p>
+<p>CGPA: 7.82</p><br>
+<p><strong>Higher Secondary (12th)</strong> – 520 Marks</p>
+<p><strong>SSLC (10th)</strong> – 434 Marks</p>
+<p>Government Girls Hr. Sec. School, Sankarankovil</p>
+</div>
 </section>
 
 <section>
-    <h2>Projects</h2>
-    <div class="glass">
-        <p><strong>Smart Plant Monitoring System</strong></p>
-        <ul>
-            <li>Automated soil moisture monitoring using sensors</li>
-            <li>Environmental data-based plant health tracking</li>
-        </ul>
-
-        <br>
-
-        <p><strong>Smart Lock System</strong></p>
-        <ul>
-            <li>Embedded-based electronic authentication system</li>
-            <li>Secure access control implementation</li>
-        </ul>
-    </div>
+<h2>Projects</h2>
+<div class="glass">
+<p><strong>Smart Plant Monitoring System</strong></p>
+<ul>
+<li>Soil moisture monitoring using sensors</li>
+<li>Environmental condition tracking</li>
+</ul><br>
+<p><strong>Smart Lock System</strong></p>
+<ul>
+<li>Embedded authentication system</li>
+<li>Secure access implementation</li>
+</ul>
+</div>
 </section>
 
 <section>
-    <h2>Internship</h2>
-    <div class="glass">
-        <p><strong>IPCS Global</strong></p>
-        <ul>
-            <li>Hands-on experience in embedded systems</li>
-            <li>Hardware interfacing and real-time applications</li>
-        </ul>
-    </div>
+<h2>Internship</h2>
+<div class="glass">
+<p><strong>IPCS Global</strong></p>
+<ul>
+<li>Embedded systems exposure</li>
+<li>Hardware interfacing experience</li>
+</ul>
+</div>
 </section>
 
 <section>
-    <h2>Technical Skills</h2>
-    <div class="glass">
-        <ul>
-            <li>Embedded Systems</li>
-            <li>C Programming</li>
-            <li>Microcontrollers</li>
-            <li>Electronics Circuit Design</li>
-        </ul>
-    </div>
+<h2>Technical Skills</h2>
+<div class="glass">
+<ul>
+<li>Embedded Systems</li>
+<li>C Programming</li>
+<li>Microcontrollers</li>
+<li>Electronics Circuit Design</li>
+</ul>
+</div>
 </section>
 
-<footer>
-© 2026 Anupriya K
-</footer>
+<footer>© 2026 Anupriya K</footer>
 
 </div>
 
 <script>
-const canvas = document.getElementById("animationCanvas");
-const ctx = canvas.getContext("2d");
+const canvas=document.getElementById("animationCanvas"),
+ctx=canvas.getContext("2d"),
+frameCount=240,
+images=[];
+let currentFrame=0;
 
-let frameCount = 240;
-let images = [];
-let currentFrame = 0;
-
-function resizeCanvas(){
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+function resize(){
+    canvas.width=innerWidth;
+    canvas.height=innerHeight;
 }
-resizeCanvas();
+resize();
 
 for(let i=1;i<=frameCount;i++){
-    let img = new Image();
-    let number = String(i).padStart(3,'0');
-    img.src = `frames/ezgif-frame-${number}.jpg`;
+    let img=new Image();
+    img.src=`frames/ezgif-frame-${String(i).padStart(3,'0')}.jpg`;
     images.push(img);
 }
 
-function drawFrame(index){
-    const img = images[index];
-    if(!img) return;
-
+function draw(i){
+    const img=images[i];
+    if(!img)return;
     ctx.clearRect(0,0,canvas.width,canvas.height);
-
-    let scale = Math.max(canvas.width/img.width, canvas.height/img.height);
-    let x = (canvas.width/2) - (img.width/2)*scale;
-    let y = (canvas.height/2) - (img.height/2)*scale;
-
+    let scale=Math.max(canvas.width/img.width,canvas.height/img.height),
+    x=(canvas.width/2)-(img.width/2)*scale,
+    y=(canvas.height/2)-(img.height/2)*scale;
     ctx.drawImage(img,x,y,img.width*scale,img.height*scale);
 }
 
 window.addEventListener("scroll",()=>{
-    let scrollTop = document.documentElement.scrollTop;
-    let maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-    let scrollFraction = scrollTop / maxScroll;
-    currentFrame = Math.min(frameCount-1, Math.floor(scrollFraction*frameCount));
-    drawFrame(currentFrame);
+    let scrollTop=document.documentElement.scrollTop,
+    maxScroll=document.documentElement.scrollHeight-innerHeight,
+    fraction=scrollTop/maxScroll;
+    currentFrame=Math.min(frameCount-1,Math.floor(fraction*frameCount));
+    draw(currentFrame);
 });
 
-images[0].onload = ()=> drawFrame(0);
-
-window.addEventListener("resize",()=>{
-    resizeCanvas();
-    drawFrame(currentFrame);
-});
+images[0].onload=()=>draw(0);
+window.addEventListener("resize",()=>{resize();draw(currentFrame)});
 </script>
 
 </body>
